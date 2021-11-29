@@ -1,35 +1,56 @@
 
-
+/*Zaimplementuj metodę, która:
+1. Jako argument przyjmuje tablicę liczb całkowitych.
+2. Zwraca największą liczbę parzystą, jeżeli parzystych liczb w tablicy jest więcej, niż
+nieparzystych, lub największą liczbę nieparzystą, jeżeli to nieparzystych jest więcej.
+3. Zwraca zero, jeżeli zero znalazło się w tablicy źródłowej.*/
 
 package com.company;
 
-import java.util.Scanner;
+       import java.util.Arrays;
+       import java.util.Collections;
+       import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-       /*Scanner scan = new Scanner(System.in);
-        System.out.println("Jakiej liczby szukamy?:");
-        int liczba =scan.nextInt(); */
+           public static void main(String[] args) {
+           int[] tab = new int[8];
+           Scanner scan = new Scanner(System.in);
 
-        int[] pierwszaTablica = {1, 2, 3, 4, 5};
-        int[] drugaTablica = {1, 2, 3, 4, 6,7};
+           System.out.println("podaj liczby :");
 
-        if (pierwszaTablica.length != drugaTablica.length) {
-            System.out.println("różny rozmiar Tabli");
+           for (int i=0;i<tab.length;i++)
+             {
+                   tab[i] = scan.nextInt();
 
-        } else {
-            boolean czyRozne = false;
+               }
+           System.out.print("[");
+           for(int i=0;i<tab.length;i++)
+               {
+                   System.out.print(tab[i]+" ");
+               }
 
-            for (int i = 0; i < pierwszaTablica.length; i++) {
-                if (pierwszaTablica[i] != drugaTablica[i]) {
-                    czyRozne = true;
-                }
-            }
-            if (czyRozne) {
-                System.out.println("rożne elementy Tablicy");
-            } else {
-                System.out.println("Tablice takie same");
-            }
-        }
-    }
-}
+           System.out.print("]");
+               System.out.println();
+               System.out.println("Tablica posortowana:");
+           Arrays.sort(tab);
+               System.out.println(Arrays.toString(tab));
+
+
+
+
+
+
+
+
+
+
+
+           }
+       }
+
+
+
+
+
+
+
