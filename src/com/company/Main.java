@@ -1,9 +1,4 @@
 
-/*Zaimplementuj metodę, która:
-1. Jako argument przyjmuje tablicę liczb całkowitych.
-2. Zwraca największą liczbę parzystą, jeżeli parzystych liczb w tablicy jest więcej, niż
-nieparzystych, lub największą liczbę nieparzystą, jeżeli to nieparzystych jest więcej.
-3. Zwraca zero, jeżeli zero znalazło się w tablicy źródłowej.*/
 
 package com.company;
 
